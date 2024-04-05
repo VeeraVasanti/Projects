@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #663dff;
+        background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .o {
+        text-align: center;
+        color: blue;
+        font-size: 40px;
+        margin-top: 10px;
+        margin-bottom: 2px;
+
+      }
+      .ret {
+        width: 180px;
+        height: 55px;
+        align-items: center;
+        align-self: center;
+        font-size: xx-large;
+        background-color: black;
+        color:white;
+        border:1px solid gold;
+        margin-top: 4px;
+        transition: background-color 0.5s,color 0.5s;
+      }
+      .ret:hover {
+        background-color: white;
+        color:black;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+      }
+      .to1 {
+      width: 14%;
+       margin: auto;
+      }
+      h1 {
+        margin-top: 75px;
+        font-size: 40px;
+        font-style: arial;
+        font-family: Arial, Helvetica, sans-serif;
+        color:white;
+        text-align: center;
+        margin-bottom: 30px;
+        text-decoration: underline;
+        text-decoration-color: yellow;
+        
+      }
+      button {
+        width:80px;
+        height: 80px;
+        font-size: 45px;
+        color: black;
+        background-color: rgb(168, 166, 166)smoke;
+        border: 1px solid grey;
+        display: inline;
+      }
+      div {
+        display: grid;
+        grid-template-columns: 80px 80px 80px;
+      }
+      .to {
+       width: 20%;
+       margin: auto;
+
+      }
+      p {
+        text-align: center;
+        color: blue;
+        font-size: 40px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+      }
+      .set {
+        color: red;
+      }
+      .t {
+        color: black;
+      }
+      .pi {
+        background-color: rgb(133, 133, 250);
+        color:white;
+      }
+      .on {
+        background-color: rgb(251, 113, 180);
+        color: white;
+      }
+      .oto {
+        background-color: yellow;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TIC-TAC-TOE GAME</h1>
+    <div class="to">
+    <button onclick="
+    if(count%2===0){
+      document.querySelector('.text1').innerHTML='O';
+      document.querySelector('.text1').classList.add('on');
+      document.querySelector('.text1').disabled= true;
+      count++;
+    }
+    else {
+      document.querySelector('.text1').innerHTML='X';
+      document.querySelector('.text1').classList.add('oto');
+      document.querySelector('.text1').disabled= true;
+      count++;
+    };
+    fun(); ro();
+    " class="text1">
+
+    </button>
+    <button onclick="
+    if(count%2===0){
+      document.querySelector('.text2').innerHTML='O';
+      document.querySelector('.text2').classList.add('on');
+      document.querySelector('.text2').disabled= true;
+      count++;
+    }
+    else {
+      document.querySelector('.text2').innerHTML='X';
+      document.querySelector('.text2').classList.add('oto');
+      document.querySelector('.text2').disabled= true;
+      count++;
+    };
+    fun(); ro();
+    " class="text2">
+      
+    </button>
+    <button onclick="
+    if(count%2===0){
+      document.querySelector('.text3').innerHTML='O';
+      document.querySelector('.text3').classList.add('on');
+      document.querySelector('.text3').disabled= true;
+      count++;
+    }
+    else {
+      document.querySelector('.text3').innerHTML='X';
+      document.querySelector('.text3').classList.add('oto');
+      document.querySelector('.text3').disabled= true;
+      count++;
+    };
+    fun(); ro();
+    " class="text3">
+      
+    </button>
+    <button onclick="
+    if(count%2===0){
+      document.querySelector('.text4').innerHTML='O';
+      document.querySelector('.text4').classList.add('on');
+      document.querySelector('.text4').disabled= true;
+      count++;
+    }
+    else {
+      document.querySelector('.text4').innerHTML='X';
+      document.querySelector('.text4').classList.add('oto');
+      document.querySelector('.text4').disabled= true;
+      count++;
+    };
+    fun(); ro();" class="text4">
+      
+    </button>
+    <button onclick="
+    if(count%2===0){
+      document.querySelector('.text5').innerHTML='O';
+      document.querySelector('.text5').classList.add('on');
+      document.querySelector('.text5').disabled= true;
+      count++;
+    }
+    else {
+      document.querySelector('.text5').innerHTML='X';
+      document.querySelector('.text5').classList.add('oto');
+      document.querySelector('.text5').disabled= true;
+      count++;
+    };
+    fun(); ro();" class="text5">
+      
+    </button>
+    <button onclick="
+    if(count%2===0){
+        document.querySelector('.text6').innerHTML='O';
+        document.querySelector('.text6').classList.add('on');
+        document.querySelector('.text6').disabled= true;
+        count++;
+      }
+      else {
+        document.querySelector('.text6').innerHTML='X';
+        document.querySelector('.text6').classList.add('oto');
+        document.querySelector('.text6').disabled= true;
+        count++;
+      }
+      ;fun(); ro();" class="text6">
+      
+    </button>
+    <button onclick="
+    if(count%2===0){
+        document.querySelector('.text7').innerHTML='O';
+        document.querySelector('.text7').classList.add('on');
+        document.querySelector('.text7').disabled= true;
+        count++;
+      }
+      else {
+        document.querySelector('.text7').innerHTML='X';
+        document.querySelector('.text7').classList.add('oto');
+        document.querySelector('.text7').disabled= true;
+        count++;
+      }
+      ;fun(); ro();" class="text7">
+      
+    </button>
+    <button onclick="
+    if(count%2===0){
+        document.querySelector('.text8').innerHTML='O';
+        document.querySelector('.text8').classList.add('on');
+        document.querySelector('.text8').disabled= true;
+        count++;
+      }
+      else {
+        document.querySelector('.text8').innerHTML='X';
+        document.querySelector('.text8').classList.add('oto');
+        document.querySelector('.text8').disabled= true;
+        count++;
+      };
+      fun(); ro();" class="text8">
+      
+    </button>
+    <button onclick="
+    if(count%2===0){
+      document.querySelector('.text9').innerHTML='O';
+      document.querySelector('.text9').classList.add('on');
+      document.querySelector('.text9').disabled= true;
+      count++;
+    }
+    else {
+      document.querySelector('.text9').innerHTML='X';
+      document.querySelector('.text9').classList.add('oto');
+      document.querySelector('.text9').disabled= true;
+      count++;
+    };
+    fun(); ro();" class="text9">
+      
+    </button>
+  </div>
+  <p class="o">Winner is <span class="t">>>></p>
+  <p class="l"></p>
+  <div class="to1"><button class="ret" onclick="fon();">Reset</button></div>
+  
+  </body>
+  <script>
+    let count=0;
+    function fun()
+    {
+      let b1=document.querySelector('.text1').innerHTML;
+      let b2=document.querySelector('.text2').innerHTML;
+      let b3=document.querySelector('.text3').innerHTML;
+      let b4=document.querySelector('.text4').innerHTML;
+      let b5=document.querySelector('.text5').innerHTML;
+      let b6=document.querySelector('.text6').innerHTML;
+      let b7=document.querySelector('.text7').innerHTML;
+      let b8=document.querySelector('.text8').innerHTML;
+      let b9=document.querySelector('.text9').innerHTML;
+      
+        if((b1==='X') || (b1==='O'))
+        {
+            if((b1===b2) && (b2===b3))
+          {
+            document.querySelector('.text1').style.color = "green"; 
+            document.querySelector('.text2').style.color = "green"; 
+            document.querySelector('.text3').style.color = "green"; 
+            document.querySelector('.l').innerHTML=`&#127881;player <span class="set">"${b1}"</span>`;
+            po();
+      
+          }
+          else if((b1===b4) && (b4===b7))
+          {
+            document.querySelector('.text1').style.color = "green"; 
+            document.querySelector('.text4').style.color = "green"; 
+            document.querySelector('.text7').style.color = "green"; 
+            document.querySelector('.l').innerHTML=`&#127881;player <span class="set">"${b7}"</span>`;
+            po();
+          }
+          else if((b1===b5) && (b5===b9))
+          {
+            document.querySelector('.text1').style.color = "green"; 
+            document.querySelector('.text5').style.color = "green"; 
+            document.querySelector('.text9').style.color = "green"; 
+            document.querySelector('.l').innerHTML=`&#127881;player <span class="set">"${b1}"</span>`;
+            po();
+          }
+          else if((b9==='X') || (b9==='O'))
+        {
+          if((b7===b8) && (b8===b9))
+          {
+            document.querySelector('.text7').style.color = "green"; 
+            document.querySelector('.text8').style.color = "green"; 
+            document.querySelector('.text9').style.color = "green"; 
+            document.querySelector('.l').innerHTML=`&#127881;player <span class="set">"${b7}"</span>`;
+            po();
+          }
+          else  if((b3===b6) && (b6===b9))
+          {
+            document.querySelector('.text3').style.color = "green"; 
+            document.querySelector('.text6').style.color = "green"; 
+            document.querySelector('.text9').style.color = "green"; 
+            document.querySelector('.l').innerHTML=`&#127881;player <span class="set">"${b3}"</span>`;
+            po();
+          }
+          else if((b5==='X') || (b5==='O') )
+        {
+            if((b4===b5) && (b5===b6))
+          {
+            document.querySelector('.text4').style.color = "green"; 
+            document.querySelector('.text6').style.color = "green"; 
+            document.querySelector('.text5').style.color = "green"; 
+            document.querySelector('.l').innerHTML=`&#127881;player <span class="set">"${b4}"</span>`;
+            po();
+          }
+          if((b2===b5) && (b5===b8))
+          {
+            document.querySelector('.text2').style.color = "green"; 
+            document.querySelector('.text5').style.color = "green"; 
+            document.querySelector('.text8').style.color = "green"; 
+            document.querySelector('.l').innerHTML=`&#127881;player <span class="set">"${b2}"</span>`;
+            po();
+          }
+          if((b7===b5) && (b5===b3))
+          {
+            document.querySelector('.text7').style.color = "green"; 
+            document.querySelector('.text5').style.color = "green"; 
+            document.querySelector('.text3').style.color = "green"; 
+            document.querySelector('.l').innerHTML=`&#127881;player <span class="set">"${b3}"</span>`;
+            po();
+          }
+        }
+        }
+        else if((b5==='X') || (b5==='O') )
+        {
+            if((b4===b5) && (b5===b6))
+          {
+            document.querySelector('.text4').style.color = "green"; 
+            document.querySelector('.text5').style.color = "green"; 
+            document.querySelector('.text6').style.color = "green"; 
+            document.querySelector('.l').innerHTML=`&#127881;player <span class="set">"${b4}"</span>`;
+            po();
+          }
+          if((b2===b5) && (b5===b8))
+          {
+            document.querySelector('.text5').style.color = "green"; 
+            document.querySelector('.text2').style.color = "green"; 
+            document.querySelector('.text8').style.color = "green"; 
+            document.querySelector('.l').innerHTML=`&#127881;player <span class="set">"${b2}"</span>`;
+            po();
+          }
+          if((b7===b5) && (b5===b3))
+          {
+            document.querySelector('.text7').style.color = "green"; 
+            document.querySelector('.text5').style.color = "green"; 
+            document.querySelector('.text8').style.color = "green"; 
+            document.querySelector('.l').innerHTML=`&#127881;player <span class="set">"${b3}"</span>`;
+            po();
+          }
+        }
+
+        }
+        else if((b9==='X') || (b9==='O'))
+        {
+          if((b7===b8) && (b8===b9))
+          {
+            document.querySelector('.text7').style.color = "green"; 
+            document.querySelector('.text8').style.color = "green"; 
+            document.querySelector('.text9').style.color = "green"; 
+            document.querySelector('.l').innerHTML=`&#127881;player <span class="set">"${b7}"</span>`;
+            po();
+          }
+          else  if((b3===b6) && (b6===b9))
+          {
+            document.querySelector('.text3').style.color = "green"; 
+            document.querySelector('.text6').style.color = "green"; 
+            document.querySelector('.text9').style.color = "green"; 
+            document.querySelector('.l').innerHTML=`&#127881;player <span class="set">"${b3}"</span>`;
+            po();
+          }
+          else if((b5==='X') || (b5==='O') )
+        {
+            if((b4===b5) && (b5===b6))
+          {
+            document.querySelector('.text4').style.color = "green"; 
+            document.querySelector('.text5').style.color = "green"; 
+            document.querySelector('.text6').style.color = "green"; 
+            document.querySelector('.l').innerHTML=`&#127881;player <span class="set">"${b4}"</span>`;
+            po();
+          }
+          if((b2===b5) && (b5===b8))
+          {
+            document.querySelector('.text2').style.color = "green"; 
+            document.querySelector('.text5').style.color = "green"; 
+            document.querySelector('.text8').style.color = "green"; 
+            document.querySelector('.l').innerHTML=`&#127881;player <span class="set">"${b2}"</span>`;
+            po();
+          }
+          if((b7===b5) && (b5===b3))
+          {
+            document.querySelector('.text7').style.color = "green"; 
+            document.querySelector('.text5').style.color = "green"; 
+            document.querySelector('.text3').style.color = "green"; 
+            document.querySelector('.l').innerHTML=`&#127881;player <span class="set">"${b3}"</span>`;
+            po();
+          }
+        }
+        }
+        else if((b5==='X') || (b5==='O') )
+        {
+            if((b4===b5) && (b5===b6))
+          {
+            document.querySelector('.text4').style.color = "green"; 
+            document.querySelector('.text5').style.color = "green"; 
+            document.querySelector('.text6').style.color = "green"; 
+            document.querySelector('.l').innerHTML=`&#127881;player <span class="set">"${b4}"</span>`;
+            po();
+          }
+          if((b2===b5) && (b5===b8))
+          {
+            document.querySelector('.text2').style.color = "green"; 
+            document.querySelector('.text5').style.color = "green"; 
+            document.querySelector('.text8').style.color = "green"; 
+            document.querySelector('.l').innerHTML=`&#127881;player <span class="set">"${b2}"</span>`;
+            po();
+          }
+          if((b7===b5) && (b5===b3))
+          {
+            document.querySelector('.text7').style.color = "green"; 
+            document.querySelector('.text5').style.color = "green"; 
+            document.querySelector('.text3').style.color = "green"; 
+            document.querySelector('.l').innerHTML=`&#127881;player <span class="set">"${b3}"</span>`;
+            po();
+          }
+        }
+        
+        
+        
+      }
+     function ro()
+     {
+      let b1=document.querySelector('.text1').innerHTML;
+      let b2=document.querySelector('.text2').innerHTML;
+      let b3=document.querySelector('.text3').innerHTML;
+      let b4=document.querySelector('.text4').innerHTML;
+      let b5=document.querySelector('.text5').innerHTML;
+      let b6=document.querySelector('.text6').innerHTML;
+      let b7=document.querySelector('.text7').innerHTML;
+      let b8=document.querySelector('.text8').innerHTML;
+      let b9=document.querySelector('.text9').innerHTML;
+      if(((b1==='X') || (b1==='O')) && ((b2==='X') || (b2==='O')) && ((b3==='X') || (b3==='O')) && ((b4==='X') || (b4==='O')) && ((b5==='X') || (b5==='O')) && ((b6==='X') || (b6==='O')) && ((b7==='X') || (b7==='O')) && ((b8==='X') || (b8==='O')) && ((b9==='X') || (b9==='O')))
+        {
+          document.querySelector('.l').innerHTML=`&#128078;It's a <span class="set">"Tie"</span>`;
+        }
+           
+     }
+      function po()
+      {
+        document.querySelector('.text1').disabled=true;
+            document.querySelector('.text2').disabled=true;
+            document.querySelector('.text3').disabled=true;
+            document.querySelector('.text4').disabled=true;
+            document.querySelector('.text5').disabled=true;
+            document.querySelector('.text6').disabled=true;
+            document.querySelector('.text7').disabled=true;
+            document.querySelector('.text8').disabled=true;
+            document.querySelector('.text9').disabled=true;
+      }
+      function fon()
+      {
+        document.querySelector('.text1').innerHTML="";
+        document.querySelector('.text2').innerHTML="";
+        document.querySelector('.text3').innerHTML="";
+        document.querySelector('.text4').innerHTML="";
+        document.querySelector('.text5').innerHTML="";
+        document.querySelector('.text6').innerHTML="";
+        document.querySelector('.text7').innerHTML="";
+        document.querySelector('.text8').innerHTML="";
+        document.querySelector('.text9').innerHTML="";
+        document.querySelector('.text1').disabled=false;
+        document.querySelector('.text2').disabled=false;
+        document.querySelector('.text3').disabled=false;
+        document.querySelector('.text4').disabled=false;
+        document.querySelector('.text5').disabled=false;
+        document.querySelector('.text6').disabled=false;
+        document.querySelector('.text7').disabled=false;
+        document.querySelector('.text8').disabled=false;
+        document.querySelector('.text9').disabled=false;
+        document.querySelector('.l').innerHTML="";
+        document.querySelector('.text1').classList.remove('oto');
+        document.querySelector('.text2').classList.remove('on');
+        document.querySelector('.text3').classList.remove('oto');
+        document.querySelector('.text4').classList.remove('on');
+        document.querySelector('.text5').classList.remove('oto');
+        document.querySelector('.text6').classList.remove('on');
+        document.querySelector('.text7').classList.remove('oto');
+        document.querySelector('.text8').classList.remove('on');
+        document.querySelector('.text9').classList.remove('oto');
+        document.querySelector('.text1').classList.remove('on');
+        document.querySelector('.text2').classList.remove('oto');
+        document.querySelector('.text3').classList.remove('on');
+        document.querySelector('.text4').classList.remove('oto');
+        document.querySelector('.text5').classList.remove('on');
+        document.querySelector('.text6').classList.remove('oto');
+        document.querySelector('.text7').classList.remove('on');
+        document.querySelector('.text8').classList.remove('oto');
+        document.querySelector('.text9').classList.remove('on');
+        document.querySelector('.text1').style.color = "white"; 
+        document.querySelector('.text2').style.color = "white"; 
+        document.querySelector('.text3').style.color = "white";
+        document.querySelector('.text4').style.color = "white"; 
+        document.querySelector('.text5').style.color = "white"; 
+        document.querySelector('.text6').style.color = "white";
+        document.querySelector('.text7').style.color = "white"; 
+        document.querySelector('.text8').style.color = "white"; 
+        document.querySelector('.text9').style.color = "white";
+  
+  }
+  
+  
+
+    
+
+    
+  </script>
+</html>
