@@ -58,17 +58,17 @@
     <button
           onclick="
                   cal('scissor');"
-    class="button"><img src="scissor-emoji.png" class="emoji"></button>
+    class="button"><img src="game-images/scissor-emoji.png" class="emoji"></button>
     <button
         onclick="
                 
                 cal('rock');"
-    class="button"><img src="rock-emoji.png" class="emoji"></button>
+    class="button"><img src="game-images/rock-emoji.png" class="emoji"></button>
     <button
         onclick="
         
                 cal('paper');"
-    class="button"><img src="paper-emoji.png" class="emoji"></button>
+    class="button"><img src="game-images/paper-emoji.png" class="emoji"></button>
     <p class="won"></p>
     <p class="who"></p>
     <p class="info"></p>
@@ -165,7 +165,7 @@
           }
           localStorage.setItem('counter',JSON.stringify(counter));
           document.querySelector('.won').innerHTML=result;
-          document.querySelector('.who').innerHTML=`You choose <img src="${playermove}-emoji.png" class="emoji">-Computer choose <img src="${comp}-emoji.png" class="emoji">`;
+          document.querySelector('.who').innerHTML=`You choose <img src="game-images/${playermove}-emoji.png" class="emoji">-Computer choose <img src="game-images/${comp}-emoji.png" class="emoji">`;
           update();
         }
         function funt()
